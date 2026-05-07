@@ -289,7 +289,7 @@ MonoBehaviour:
   - {fileID: 7593470764661946767, guid: 426c8addfa99e0044ba4b430a287ecf0, type: 3}
   - {fileID: 1876394721076049463, guid: 49c249dc75e45094a9f1498ce5bf323e, type: 3}
   - {fileID: 7138524461639873608, guid: 4d0890e4ff7e78f42a99726e23322534, type: 3}
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 2117120697}
 --- !u!1 &459153244
 GameObject:
   m_ObjectHideFlags: 0
@@ -978,7 +978,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
+  m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
