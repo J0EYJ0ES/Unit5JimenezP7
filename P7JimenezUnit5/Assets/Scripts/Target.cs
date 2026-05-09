@@ -16,6 +16,8 @@ public class Target : MonoBehaviour
 
     public int pointValue;
 
+    public ParticleSystem explosionParticle;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,13 +33,23 @@ public class Target : MonoBehaviour
     public void OnMouseDown()
     {
         Destroy(gameObject);
+        Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
         gameManager.UpdateScore(pointValue);
        
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
+        if (gameManager.isGameActive)
+        {
+            Destroy(gameObject);
+            if (!gameObject.CompareTag("Bad") && gameManager.isGameActive)
+            {
+                gameManager.UpdateLives(-1);
+            }
+        }
+
+       
     }
 
     Vector3 RandomForce()
