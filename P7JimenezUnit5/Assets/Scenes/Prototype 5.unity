@@ -274,7 +274,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &54817195
 RectTransform:
   m_ObjectHideFlags: 0
@@ -663,6 +663,7 @@ MonoBehaviour:
   restartButton: {fileID: 625964441}
   titleScreen: {fileID: 751506585}
   livesText: {fileID: 603719216}
+  pauseScreen: {fileID: 54817194}
 --- !u!1 &424504561
 GameObject:
   m_ObjectHideFlags: 0
